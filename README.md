@@ -2,6 +2,20 @@ Original [README](https://github.com/rchain/Rosette/blob/master/README).
 
 ## Dockerized 32-bit Rosette
 
+### TL;DR
+Three easy steps:
+```
+git clone git@github.com:kirkwood/rosette --branch docker-build
+```
+```
+docker build . -t rosette-repl:latest
+```
+```
+docker run -ti rosette-repl
+```
+
+### Preliminaries
+
 I selected the 32-bit Ubuntu 14.04 image, since it's not _too_ old and it's not _too_ new. Arbitrary choice, really.
 
 Building requires a working docker situation, but I've only tested with this version:
