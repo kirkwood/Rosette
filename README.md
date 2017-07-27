@@ -74,7 +74,6 @@ docker run -ti rosette-repl
 ```
 which will fill out the initial environment:
 ```
-$ docker run -it rosette-repl
 make: Entering directory `/src/rbl'
 cd rosette; make
 make[1]: Entering directory `/src/rbl/rosette'
