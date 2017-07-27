@@ -132,7 +132,7 @@ properPrep (char* s)
     }
     return "";
 }
-#ifdef __GNUC__
+#if defined(__GNUC__) && !defined(__linux)
 extern "C" {
 extern const char* const sys_errlist[];
 extern const int sys_nerr;

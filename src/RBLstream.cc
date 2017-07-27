@@ -386,12 +386,16 @@ DEF("getFd",obGetFd, 1, 1)
   if (IS_A(ARG(0), Istream))
 #ifdef HPUX
     return FIXNUM(((Istream*)ARG(0))->reader->file->__fileL);
+#elif defined(__linux)
+    return FIXNUM(fileno(((Istream*)ARG(0))->reader->file));
 #else
     return FIXNUM(((Istream*)ARG(0))->reader->file->_file);
 #endif
   else if (IS_A(ARG(0), Ostream))
 #ifdef HPUX
     return FIXNUM(((Ostream*)ARG(0))->stream->__fileL);
+#elif defined(__linux)
+    return FIXNUM(fileno(((Ostream*)ARG(0))->stream));
 #else
     return FIXNUM(((Ostream*)ARG(0))->stream->_file);
 #endif

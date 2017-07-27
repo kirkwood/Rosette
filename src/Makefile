@@ -24,7 +24,7 @@
 
 ARCH		= linux
 
-CPPFLAGS	= -I ../h -I ../h/sys -DARCH_INC=\"$(ARCH).h\"
+CPPFLAGS	= -I ../h -I ../h/sys -DARCH_INC=\"$(ARCH).h\" -Wno-write-strings -Wno-invalid-offsetof
 
 #LDCC		= gcc -g $(W_STATIC) -DGCC27X -lm
 LDCC		= g++ -g $(W_STATIC) -DGCC27X -lm
