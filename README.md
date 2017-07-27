@@ -6,7 +6,7 @@ I selected the 32-bit Ubuntu 14.04 image, since it's not _too_ old and it's not 
 
 Building requires a working docker situation, but I've only tested with this version:
 ```
-$ docker version                                                                                                                                                         
+$ docker version
 Client:
  Version:      17.05.0-ce
  API version:  1.29
