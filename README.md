@@ -6,6 +6,7 @@ Original [README](https://github.com/rchain/Rosette/blob/master/README).
 Three easy steps:
 ```
 git clone git@github.com:kirkwood/rosette --branch docker-build
+cd rosette
 ```
 ```
 docker build . -t rosette-repl:latest
