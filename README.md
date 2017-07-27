@@ -3,7 +3,7 @@ Original [README](https://github.com/rchain/Rosette/blob/master/README).
 ## Dockerized 32-bit Rosette
 
 ### TL;DR
-Three easy steps:
+Three easy steps (the two `docker` commands may need `sudo`):
 ```
 git clone git@github.com:kirkwood/rosette --branch docker-build
 cd rosette
