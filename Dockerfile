@@ -7,4 +7,5 @@ WORKDIR /src
 
 RUN make -C src
 
+ENV ESS_SYSDIR /src/rbl/rosette
 ENTRYPOINT make -C rbl
